@@ -95,7 +95,7 @@ class LoginActivity : AppCompatActivity() {
             login.setOnClickListener {
                 loading.visibility = View.VISIBLE
                 loginViewModel.login(username.text.toString(), password.text.toString())
-                val intent = Intent(this.context, MainMenuActivity::class.java)
+                val intent = Intent(this@LoginActivity, MainMenuActivity::class.java)
                 startActivity(intent)
             }
         }

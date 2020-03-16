@@ -10,6 +10,7 @@
     <string name="invalid_password">Le mot de passe doit avoir plus de 5 caractères</string>
     <string name="login_failed">La connection n\'a pas réussi</string>
     <string name="checkbox">Rester connecté</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
     <string name="title_activity_programme">"Programme"</string>
     <string name="title_activity_statistiques">"Statistiques"</string>
     <string name="title_activity_messagerie">"Messagerie"</string>

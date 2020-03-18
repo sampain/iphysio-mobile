@@ -13,7 +13,7 @@
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="title_activity_programme">"Programme"</string>
     <string name="title_activity_statistiques">"Statistiques"</string>
-    <string name="title_activity_messagerie">"Messagerie"</string>
+    <string name="title_activity_messaging">"Messagerie"</string>
     <string name="title_activity_alerts">"Alertes"</string>
     <string name="action_account">"Compte"</string>
     <string name="action_settings">"Paramètres"</string>

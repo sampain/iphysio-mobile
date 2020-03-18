@@ -15,7 +15,7 @@
             android:name=".ForgotPasswordActivity"
             android:parentActivityName=".ui.login.LoginActivity" />
         <activity
-            android:name=".MessagerieActivity"
+            android:name=".MessagingActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".AlertsActivity"

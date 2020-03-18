@@ -3,6 +3,7 @@ package com.example.epmusmobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Button
 
 class MainMenuActivity : AppCompatActivity() {
@@ -10,6 +11,9 @@ class MainMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
+
+        // toolbar support
+        setSupportActionBar(findViewById(R.id.my_toolbar))
 
         val programme = findViewById<Button>(R.id.activity_programme)
         val statistiques = findViewById<Button>(R.id.activity_statistiques)
@@ -35,5 +39,11 @@ class MainMenuActivity : AppCompatActivity() {
             val intent = Intent(this@MainMenuActivity, AlertesActivity::class.java)
             startActivity(intent)
         }
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar_actions, menu)
+        return true
     }
 }

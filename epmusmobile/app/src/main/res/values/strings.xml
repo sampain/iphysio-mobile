@@ -15,4 +15,5 @@
     <string name="title_activity_statistiques">"Statistiques"</string>
     <string name="title_activity_messagerie">"Messagerie"</string>
     <string name="title_activity_alertes">"Alertes"</string>
+    <string name="action_settings">"Paramètres"</string>
 </resources>

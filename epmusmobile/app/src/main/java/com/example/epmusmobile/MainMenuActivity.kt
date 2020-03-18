@@ -69,7 +69,7 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         R.id.action_logout -> {
-            //Temporary implementation, only returns to login page
+            // TODO: handle logout properly
             val intent = Intent(this@MainMenuActivity, LoginActivity::class.java)
             startActivity(intent)
             true

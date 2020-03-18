@@ -4,7 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
+import com.example.epmusmobile.ui.login.LoginActivity
+import kotlinx.android.synthetic.main.activity_login.*
 
 class MainMenuActivity : AppCompatActivity() {
 
@@ -45,5 +48,36 @@ class MainMenuActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar_actions, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.action_account -> {
+            val intent = Intent(this@MainMenuActivity, AccountActivity::class.java)
+            startActivity(intent)
+            true
+        }
+
+        R.id.action_historic -> {
+            val intent = Intent(this@MainMenuActivity, HistoryActivity::class.java)
+            startActivity(intent)
+            true
+        }
+
+        R.id.action_settings -> {
+            val intent = Intent(this@MainMenuActivity, SettingsActivity::class.java)
+            startActivity(intent)
+            true
+        }
+
+        R.id.action_logout -> {
+            //Temporary implementation, only returns to login page
+            val intent = Intent(this@MainMenuActivity, LoginActivity::class.java)
+            startActivity(intent)
+            true
+        }
+
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
     }
 }

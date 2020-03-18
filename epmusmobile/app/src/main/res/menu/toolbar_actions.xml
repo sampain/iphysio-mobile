@@ -1,9 +1,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item android:id="@+id/action_account"
+        android:title="@string/action_account"
+        android:icon="@drawable/ic_account_circle_24px"
+        app:showAsAction="ifRoom"/>
+
     <item android:id="@+id/action_historic"
         android:title="@string/action_historic"
-        app:showAsAction="never"/>
+        android:icon="@drawable/ic_history_24px"
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/action_setting"
         android:icon="@drawable/ic_settings_24px"

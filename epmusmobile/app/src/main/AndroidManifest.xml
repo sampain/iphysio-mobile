@@ -18,7 +18,7 @@
             android:name=".MessagerieActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
-            android:name=".AlertesActivity"
+            android:name=".AlertsActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".StatistiquesActivity"

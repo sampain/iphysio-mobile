@@ -7,7 +7,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import com.example.epmusmobile.ui.login.LoginActivity
-import kotlinx.android.synthetic.main.activity_login.*
 
 class MainMenuActivity : AppCompatActivity() {
 
@@ -21,7 +20,7 @@ class MainMenuActivity : AppCompatActivity() {
         val programme = findViewById<Button>(R.id.activity_programme)
         val statistiques = findViewById<Button>(R.id.activity_statistiques)
         val messagerie = findViewById<Button>(R.id.activity_messagerie)
-        val alertes = findViewById<Button>(R.id.activity_alertes)
+        val alerts = findViewById<Button>(R.id.activity_alerts)
 
         programme.setOnClickListener{
             val intent = Intent(this@MainMenuActivity, ProgrammeActivity::class.java)
@@ -38,8 +37,8 @@ class MainMenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        alertes.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, AlertesActivity::class.java)
+        alerts.setOnClickListener{
+            val intent = Intent(this@MainMenuActivity, AlertsActivity::class.java)
             startActivity(intent)
         }
     }

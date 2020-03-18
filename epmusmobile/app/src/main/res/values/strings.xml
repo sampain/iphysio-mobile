@@ -12,7 +12,7 @@
     <string name="checkbox">Rester connecté</string>
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="title_activity_program">"Programme"</string>
-    <string name="title_activity_statistiques">"Statistiques"</string>
+    <string name="title_activity_statistics">"Statistiques"</string>
     <string name="title_activity_messaging">"Messagerie"</string>
     <string name="title_activity_alerts">"Alertes"</string>
     <string name="action_account">"Compte"</string>

@@ -18,7 +18,7 @@ class MainMenuActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.my_toolbar))
 
         val program = findViewById<Button>(R.id.activity_program)
-        val statistiques = findViewById<Button>(R.id.activity_statistiques)
+        val statistics = findViewById<Button>(R.id.activity_statistics)
         val messaging = findViewById<Button>(R.id.activity_messaging)
         val alerts = findViewById<Button>(R.id.activity_alerts)
 
@@ -27,8 +27,8 @@ class MainMenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        statistiques.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, StatistiquesActivity::class.java)
+        statistics.setOnClickListener{
+            val intent = Intent(this@MainMenuActivity, StatisticsActivity::class.java)
             startActivity(intent)
         }
 

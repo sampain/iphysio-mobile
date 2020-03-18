@@ -24,7 +24,7 @@
             android:name=".StatistiquesActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
-            android:name=".ProgrammeActivity"
+            android:name=".ProgramActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".HistoryActivity"

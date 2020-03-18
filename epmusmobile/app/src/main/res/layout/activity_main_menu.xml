@@ -17,7 +17,7 @@ tools:context=".MainMenuActivity">
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
 
     <Button
-        android:id="@+id/activity_programme"
+        android:id="@+id/activity_program"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -27,7 +27,7 @@ tools:context=".MainMenuActivity">
         android:layout_marginEnd="10dp"
         android:textSize="30sp"
         android:gravity="center"
-        android:text="@string/title_activity_programme" />
+        android:text="@string/title_activity_program" />
 
     <Button
         android:id="@+id/activity_statistiques"

@@ -17,13 +17,13 @@ class MainMenuActivity : AppCompatActivity() {
         // toolbar support
         setSupportActionBar(findViewById(R.id.my_toolbar))
 
-        val programme = findViewById<Button>(R.id.activity_programme)
+        val program = findViewById<Button>(R.id.activity_program)
         val statistiques = findViewById<Button>(R.id.activity_statistiques)
         val messaging = findViewById<Button>(R.id.activity_messaging)
         val alerts = findViewById<Button>(R.id.activity_alerts)
 
-        programme.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, ProgrammeActivity::class.java)
+        program.setOnClickListener{
+            val intent = Intent(this@MainMenuActivity, ProgramActivity::class.java)
             startActivity(intent)
         }
 

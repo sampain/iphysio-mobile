@@ -17,6 +17,6 @@
     <string name="title_activity_alertes">"Alertes"</string>
     <string name="action_account">"Compte"</string>
     <string name="action_settings">"Paramètres"</string>
-    <string name="action_historic">"Historique"</string>
+    <string name="action_history">"Historique"</string>
     <string name="action_logout">"Déconnexion"</string>
 </resources>

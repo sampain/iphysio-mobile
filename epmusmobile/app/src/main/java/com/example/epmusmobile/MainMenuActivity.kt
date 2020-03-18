@@ -57,7 +57,7 @@ class MainMenuActivity : AppCompatActivity() {
             true
         }
 
-        R.id.action_historic -> {
+        R.id.action_history -> {
             val intent = Intent(this@MainMenuActivity, HistoryActivity::class.java)
             startActivity(intent)
             true

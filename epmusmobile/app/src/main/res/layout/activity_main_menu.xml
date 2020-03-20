@@ -8,56 +8,55 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".MainMenuActivity">
 
-<Toolbar
-    android:id="@+id/my_toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:elevation="4dp"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
 
-<Button
-    android:id="@+id/activity_programme"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="2"
-    android:layout_marginTop="20dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
-    android:textSize="30sp"
-    android:gravity="center"
-    android:text="@string/title_activity_programme"></Button>
+    <Button
+        android:id="@+id/activity_program"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/title_activity_program" />
 
-<Button
-    android:id="@+id/activity_statistiques"
-    android:layout_width="match_parent"
-    android:layout_weight="2"
-    android:layout_height="0dp"
-    android:layout_margin="10dp"
-    android:textSize="30sp"
-    android:gravity="center"
-    android:text="@string/title_activity_statistiques"/>
+    <Button
+        android:id="@+id/activity_statistics"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/title_activity_statistics"/>
 
-<Button
-    android:id="@+id/activity_messagerie"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_margin="10dp"
-    android:layout_weight="1"
-    android:textSize="30sp"
-    android:text="@string/title_activity_messagerie"/>
+    <Button
+        android:id="@+id/activity_messaging"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:text="@string/title_activity_messaging"/>
 
-<Button
-    android:id="@+id/activity_alertes"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="20dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_weight="1"
-    android:textSize="30sp"
-    android:text="@string/title_activity_alertes"/>
-
+    <Button
+        android:id="@+id/activity_alerts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:text="@string/title_activity_alerts"/>
 </LinearLayout>

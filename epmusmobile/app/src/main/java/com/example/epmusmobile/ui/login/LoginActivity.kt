@@ -3,7 +3,6 @@ package com.example.epmusmobile.ui.login
 import android.app.Activity
 import android.content.Intent
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +11,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.*
+import androidx.lifecycle.ViewModelProvider
 import com.example.epmusmobile.ForgotPasswordActivity
 import com.example.epmusmobile.MainMenuActivity
 
@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        loginViewModel = ViewModelProviders.of(this, LoginViewModelFactory())
+        loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
 
         loginViewModel.loginFormState.observe(this@LoginActivity, Observer {

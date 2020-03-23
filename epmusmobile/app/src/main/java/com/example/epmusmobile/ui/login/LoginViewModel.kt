@@ -44,11 +44,13 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
         return if (username.contains('@')) {
             Patterns.EMAIL_ADDRESS.matcher(username).matches()
         } else {
+            // TODO: Remove else statement, will be email only
             username.isNotBlank()
         }
     }
 
     // A placeholder password validation check
+    // TODO: Talk with team for password restrictions
     private fun isPasswordValid(password: String): Boolean {
         return password.length > 5
     }

@@ -19,4 +19,21 @@
     <string name="action_settings">"Paramètres"</string>
     <string name="action_history">"Historique"</string>
     <string name="action_logout">"Déconnexion"</string>
+
+    <string name="title_activity_settings">Paramètres</string>
+
+    <string name="language_setting">Option de langue</string>
+    <string name="account_settings">Options du compte</string>
+    <string name="application_settings">Options de l\'application</string>
+
+    <string name="change_password">Changer le mot de passe</string>
+    <string name="language">Langue</string>
+
+    <string name="audio_setting">Désactiver l\'audio</string>
+    <string name="visual_setting">Désactiver l\'aide visuel</string>
+
+    <!--string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string-->
 </resources>

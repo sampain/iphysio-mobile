@@ -36,9 +36,6 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val test = MongoDBAccess()
-        test.mongoDBConnect()
-
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
 

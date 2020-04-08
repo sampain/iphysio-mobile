@@ -33,7 +33,7 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         messaging.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, MessagingActivity::class.java)
+            val intent = Intent(this@MainMenuActivity, NewMessageActivity::class.java)
             startActivity(intent)
         }
 

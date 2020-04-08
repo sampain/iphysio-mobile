@@ -32,6 +32,11 @@
     <string name="audio_setting">Désactiver l\'audio</string>
     <string name="visual_setting">Désactiver l\'aide visuel</string>
 
+    <string name="new_message">New Message</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="username">Username</string>
+    <string name="this_is_my_message">This is my message</string>
+
     <!--string name="attachment_title">Download incoming attachments</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>

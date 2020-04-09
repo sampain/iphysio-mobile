@@ -3,6 +3,7 @@ package com.example.epmusmobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.epmusmobile.Messaging.Chatlog
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder

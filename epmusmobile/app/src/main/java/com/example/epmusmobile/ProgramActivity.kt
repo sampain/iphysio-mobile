@@ -16,6 +16,7 @@ class ProgramActivity : AppCompatActivity() {
         // toolbar support
         setSupportActionBar(findViewById(R.id.my_toolbar_test))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

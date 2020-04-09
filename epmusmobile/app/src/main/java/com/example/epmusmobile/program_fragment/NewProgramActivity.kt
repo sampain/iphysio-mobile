@@ -1,16 +1,14 @@
-package com.example.epmusmobile
+package com.example.epmusmobile.program_fragment
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.epmusmobile.Messaging.Chatlog
+import com.example.epmusmobile.R
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
-import kotlinx.android.synthetic.main.activity_new_message.*
 import kotlinx.android.synthetic.main.activity_new_program.*
 import kotlinx.android.synthetic.main.program_row_new_program.view.*
-import kotlinx.android.synthetic.main.user_row_new_message.view.*
 
 class NewProgramActivity : AppCompatActivity() {
 
@@ -30,7 +28,8 @@ class NewProgramActivity : AppCompatActivity() {
         adapter.setOnItemClickListener{item, view ->
             val programItem = item as ProgramItem
 
-            val intent = Intent(view.context,Chatlog::class.java )
+            val intent = Intent(view.context,
+                ProgramActivity::class.java )
 
             startActivity(intent)
 

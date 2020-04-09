@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import com.example.epmusmobile.Messaging.NewMessageActivity
+import com.example.epmusmobile.program_fragment.NewProgramActivity
 import com.example.epmusmobile.ui.login.LoginActivity
 
 class MainMenuActivity : AppCompatActivity() {

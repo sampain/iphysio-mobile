@@ -1,10 +1,14 @@
-package com.example.epmusmobile
+package com.example.epmusmobile.program_fragment
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.example.epmusmobile.AccountActivity
+import com.example.epmusmobile.HistoryActivity
+import com.example.epmusmobile.R
+import com.example.epmusmobile.SettingsActivity
 import com.example.epmusmobile.ui.login.LoginActivity
 
 class ProgramActivity : AppCompatActivity() {

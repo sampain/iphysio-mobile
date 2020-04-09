@@ -19,7 +19,7 @@
             android:name=".ForgotPasswordActivity"
             android:parentActivityName=".ui.login.LoginActivity" />
         <activity
-            android:name=".MessagingActivity"
+            android:name=".Messaging.MessagingActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".AlertsActivity"
@@ -28,7 +28,7 @@
             android:name=".StatisticsActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
-            android:name=".ProgramActivity"
+            android:name=".program_fragment.ProgramActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".HistoryActivity"
@@ -43,7 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewProgramActivity">
+        <activity android:name=".program_fragment.NewProgramActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainMenuActivity" />

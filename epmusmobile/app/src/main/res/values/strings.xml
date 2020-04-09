@@ -36,6 +36,8 @@
     <string name="sign_out">Sign Out</string>
     <string name="username">Username</string>
     <string name="this_is_my_message">This is my message</string>
+    <string name="message_hint">Écrire votre message</string>
+    <string name="send">Envoyer</string>
 
     <!--string name="attachment_title">Download incoming attachments</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails

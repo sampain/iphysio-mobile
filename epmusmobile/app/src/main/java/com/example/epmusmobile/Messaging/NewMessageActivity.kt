@@ -1,10 +1,8 @@
-package com.example.epmusmobile
+package com.example.epmusmobile.Messaging
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.epmusmobile.R
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
@@ -23,14 +21,14 @@ class NewMessageActivity : AppCompatActivity() {
         val adapter = GroupAdapter<ViewHolder>()
 
         adapter.add(UserItem())
-        adapter.add(UserItem())
 
         recyclerView_newMessage.adapter = adapter
 
         adapter.setOnItemClickListener{item, view ->
             val userItem = item as UserItem
 
-            val intent = Intent(view.context,Chatlog::class.java )
+            val intent = Intent(view.context,
+                Chatlog::class.java )
 
             startActivity(intent)
 
@@ -41,7 +39,7 @@ class NewMessageActivity : AppCompatActivity() {
 
 class UserItem: Item<ViewHolder>() {
     override fun bind(viewHolder: ViewHolder, position: Int) {
-        viewHolder.itemView.Username_textView_newMessage.text = "Antonin".toString()
+        viewHolder.itemView.Username_textView_newMessage.text = "Physiothérapeute"
     }
 
     override fun getLayout(): Int {

@@ -6,17 +6,20 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_to"
         android:maxWidth="240dp"
-        android:padding="16dp"
-        android:text="This is my message and it's very long so please appreciate it"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        android:text="Test message to see if it works properly"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
@@ -25,9 +28,10 @@
         android:id="@+id/imageView2"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@drawable/ic_account_circle_24px" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.epmusmobile
+package com.example.epmusmobile.Messaging
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +28,7 @@ class LatestMessagesActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.nav_menu, menu)
+        menuInflater.inflate(R.menu.toolbar_actions, menu)
         return super.onCreateOptionsMenu(menu)
     }
 }

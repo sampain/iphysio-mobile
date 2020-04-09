@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import com.example.epmusmobile.Messaging.NewMessageActivity
 import com.example.epmusmobile.ui.login.LoginActivity
 
 class MainMenuActivity : AppCompatActivity() {
@@ -23,22 +24,22 @@ class MainMenuActivity : AppCompatActivity() {
         val alerts = findViewById<Button>(R.id.activity_alerts)
 
         program.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, ProgramActivity::class.java)
+            val intent = Intent(this, ProgramActivity::class.java)
             startActivity(intent)
         }
 
         statistics.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, StatisticsActivity::class.java)
+            val intent = Intent(this, StatisticsActivity::class.java)
             startActivity(intent)
         }
 
         messaging.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, NewMessageActivity::class.java)
+            val intent = Intent(this, NewMessageActivity::class.java)
             startActivity(intent)
         }
 
         alerts.setOnClickListener{
-            val intent = Intent(this@MainMenuActivity, AlertsActivity::class.java)
+            val intent = Intent(this, AlertsActivity::class.java)
             startActivity(intent)
         }
     }
@@ -51,26 +52,26 @@ class MainMenuActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.action_account -> {
-            val intent = Intent(this@MainMenuActivity, AccountActivity::class.java)
+            val intent = Intent(this, AccountActivity::class.java)
             startActivity(intent)
             true
         }
 
         R.id.action_history -> {
-            val intent = Intent(this@MainMenuActivity, HistoryActivity::class.java)
+            val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
             true
         }
 
         R.id.action_settings -> {
-            val intent = Intent(this@MainMenuActivity, SettingsActivity::class.java)
+            val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
             true
         }
 
         R.id.action_logout -> {
             // TODO: handle logout properly
-            val intent = Intent(this@MainMenuActivity, LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             true
         }

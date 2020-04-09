@@ -12,7 +12,7 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainMenuActivity"></activity>
+            android:parentActivityName=".MainMenuActivity" />
         <activity android:name=".AccountActivity" />
         <activity
             android:name=".ForgotPasswordActivity"
@@ -43,19 +43,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".NewMessageActivity">
+        <activity android:name=".Messaging.NewMessageActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LatestMessagesActivity" />
+                android:value=".Messaging.LatestMessagesActivity" />
         </activity>
-        <activity android:name=".Chatlog">
+        <activity android:name=".Messaging.Chatlog">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LatestMessagesActivity" />
+                android:value=".Messaging.LatestMessagesActivity" />
         </activity>
-        <activity android:name=".LatestMessagesActivity" />
-        <activity android:name=".MainActivity" android:parentActivityName=".MainMenuActivity">
-        </activity>
+        <activity android:name=".Messaging.LatestMessagesActivity" />
     </application>
 
 </manifest>

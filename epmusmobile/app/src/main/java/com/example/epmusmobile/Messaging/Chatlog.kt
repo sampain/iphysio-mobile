@@ -1,4 +1,4 @@
-package com.example.epmusmobile
+package com.example.epmusmobile.Messaging
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,9 +8,7 @@ import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.activity_chatlog.*
-import kotlinx.android.synthetic.main.chat_from_row.view.*
 import kotlinx.android.synthetic.main.chat_from_row.view.textView
-import kotlinx.android.synthetic.main.chat_to_row.view.*
 
 class Chatlog : AppCompatActivity() {
 
@@ -35,14 +33,13 @@ class Chatlog : AppCompatActivity() {
     private fun setupDummyData(){
         val adapter = GroupAdapter<ViewHolder>()
 
-        adapter.add(ChatFromItem("Bonjour c'est votre physio"))
-        adapter.add(ChatToItem("Enfin! fait 1 semaine que j'attends"))
-        adapter.add(ChatFromItem("N'oubliez pas votre rendez-vous de 10h"))
-        adapter.add(ChatToItem("Désolé j'ai bosser tard ete pas entendu mon cadran..."))
-        adapter.add(ChatFromItem("C'est votre évaluation qui va prendre cher"))
-        adapter.add(ChatToItem("je sais et c'est justifier"))
-        adapter.add(ChatFromItem("On se voit demain"))
-        adapter.add(ChatToItem("Ca marche!"))
+        adapter.add(ChatToItem("Bonjour! J'ai de la difficulté à bien comprendre comment faire l'exercice pour mon biceps."))
+        adapter.add(ChatFromItem("Appelez-moi, je vais vous aider!"))
+        adapter.add(ChatToItem("Bonjour! J'ai perdu mon papier pour notre prochain rendez-vous, pouvez-vous me rappeler la date? Merci"))
+        adapter.add(ChatFromItem("Pas de problème, c'est vendredi prochain à 13h!"))
+        adapter.add(ChatToItem("Parfait! Merci beaucoup!"))
+        adapter.add(ChatToItem("À vendredi prochain!"))
+        adapter.add(ChatFromItem("À bientôt!"))
 
         recyclerview_chat_log.adapter = adapter
     }

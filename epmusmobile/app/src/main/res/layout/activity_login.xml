@@ -57,6 +57,8 @@
         android:enabled="false"
         android:text="@string/action_sign_in"
         android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_to"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

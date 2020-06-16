@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".MainProgramActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainMenuActivity" />
         <activity android:name=".AccountActivity" />
         <activity
             android:name=".ForgotPasswordActivity"
             android:parentActivityName=".ui.login.LoginActivity" />
         <activity
-            android:name=".MessagingActivity"
+            android:name=".Messaging.MessagingActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".AlertsActivity"
@@ -24,7 +28,7 @@
             android:name=".StatisticsActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
-            android:name=".ProgramActivity"
+            android:name=".program_fragment.ProgramActivity"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".HistoryActivity"
@@ -39,6 +43,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".program_fragment.NewProgramActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuActivity" />
+        </activity>
+
+        <activity android:name=".Messaging.NewMessageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Messaging.LatestMessagesActivity" />
+        </activity>
+        <activity android:name=".Messaging.Chatlog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Messaging.LatestMessagesActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MainMenuActivity" />
+        <activity android:name=".Messaging.LatestMessagesActivity" />
     </application>
 
 </manifest>

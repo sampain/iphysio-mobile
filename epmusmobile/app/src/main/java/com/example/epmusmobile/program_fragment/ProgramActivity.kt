@@ -30,26 +30,26 @@ class ProgramActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.action_account -> {
-            val intent = Intent(this@ProgramActivity, AccountActivity::class.java)
+            val intent = Intent(this, AccountActivity::class.java)
             startActivity(intent)
             true
         }
 
         R.id.action_history -> {
-            val intent = Intent(this@ProgramActivity, HistoryActivity::class.java)
+            val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
             true
         }
 
         R.id.action_settings -> {
-            val intent = Intent(this@ProgramActivity, SettingsActivity::class.java)
+            val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
             true
         }
 
         R.id.action_logout -> {
             // TODO: handle logout properly
-            val intent = Intent(this@ProgramActivity, LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             true
         }

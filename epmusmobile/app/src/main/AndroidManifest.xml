@@ -58,10 +58,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Messaging.LatestMessagesActivity" />
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:parentActivityName=".MainMenuActivity" />
-        <activity android:name=".Messaging.LatestMessagesActivity" />
     </application>
 
 </manifest>

@@ -1,10 +1,11 @@
 package com.example.epmusmobile.program_fragment
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import com.edvard.poseestimation.CameraActivity
 import com.example.epmusmobile.AccountActivity
 import com.example.epmusmobile.HistoryActivity
 import com.example.epmusmobile.R
@@ -30,8 +31,10 @@ class ProgramActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.action_account -> {
-            val intent = Intent(this, AccountActivity::class.java)
+            val intent = Intent(this, CameraActivity::class.java)
             startActivity(intent)
+            //val intent = Intent(this, AccountActivity::class.java)
+            //startActivity(intent)
             true
         }
 

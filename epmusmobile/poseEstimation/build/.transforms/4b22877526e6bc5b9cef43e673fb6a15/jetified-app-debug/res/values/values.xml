@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="color_background">#be9268</color>
+    <color name="color_l_ankle">#2169f9</color>
+    <color name="color_l_elbow">#e8e84a</color>
+    <color name="color_l_hip">#00ac0b</color>
+    <color name="color_l_knee">#01ffe1</color>
+    <color name="color_l_shoulder">#ff9d00</color>
+    <color name="color_l_wrist">#87fd00</color>
+    <color name="color_neck">#ff0000</color>
+    <color name="color_r_ankle">#ff6a4d</color>
+    <color name="color_r_elbow">#f700ff</color>
+    <color name="color_r_hip">#0090ff</color>
+    <color name="color_r_knee">#268b01</color>
+    <color name="color_r_shoulder">#ad48f5</color>
+    <color name="color_r_wrist">#ff0000</color>
+    <color name="color_top">#980000</color>
+    <color name="control_background">#cc4285f4</color>
+    <color name="top">#980000</color>
+    <color name="white">#fff</color>
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <string name="app_name">PoseEstimationDemo</string>
+    <string name="background">Background</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="debug">Debug : </string>
+    <string name="description_info">Info</string>
+    <string name="hello">Hello </string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            PoseEstimation For Mobile
+
+
+        ]]>
+    </string>
+    <string name="l_ankle">LAnkle</string>
+    <string name="l_elbow">LElbow</string>
+    <string name="l_hip">LHip</string>
+    <string name="l_knee">LKnee</string>
+    <string name="l_shoulder">LShoulder</string>
+    <string name="l_wrist">LWrist</string>
+    <string name="neck">Neck</string>
+    <string name="picture">Picture</string>
+    <string name="r_ankle">RAnkle</string>
+    <string name="r_elbow">RElbow</string>
+    <string name="r_hip">RHip</string>
+    <string name="r_knee">RKnee</string>
+    <string name="r_shoulder">RShoulder</string>
+    <string name="r_wrist">RWrist</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="toggle">Use NNAPI</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <style name="AppTheme" parent="Theme.Sample"/>
+    <style name="MaterialTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen"/>
+    <style name="Theme.Base" parent="android:Theme.Light"/>
+    <style name="Theme.Sample" parent="Theme.Base"/>
+    <style name="Widget"/>
+    <style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="Widget.SampleMessageTile">
+        <item name="android:background">@drawable/tile</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowDy">-3.5</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+</resources>
